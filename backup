@@ -1,0 +1,25 @@
+    <div className="navbars shadow-lg">
+      
+    <Navbar className='navbar-color' variant="dark">
+    <Navbar.Brand className='ms-4' href="#home"><i><b>EduTech</b></i></Navbar.Brand>
+        <Container>
+          <Nav className="ms-auto">
+            <Nav.Link className='active' href="#home">Home</Nav.Link>
+            <Nav.Link href="#features">Testimonial</Nav.Link>
+            <Nav.Link href="#pricing">Class</Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar>
+    </div>  
+
+           {dataUsers.map((user) => (
+                <>
+                
+          
+               <div className="user p-4 pb-0  card p-3 bg-light pt-3 border-0 mb-3 ">
+               <p><FaUserCircle  className='m-1'/>    {user.name}</p>
+                <p><BsFillChatTextFill className='m-1'/>  {user.body}</p>
+               </div>
+
+                </>
+                  ))}
